@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta charset="utf-8" />
+
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+
+$if(math)$
+  $math$
+$endif$
+
+$for(header-includes)$
+  $header-includes$
+$endfor$
+
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+</head>
+<body>
+  $if(title)$
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="doc-title navbar-brand">$title$</span>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <div class="navbar-right">
+          <ul class="nav navbar-nav">
+            $for(author)$
+            <li><p class="navbar-text">$author$</p></li>
+            $endfor$
+            $if(date)$
+            <li><p class="navbar-text">$date$</p></li>
+            $endif$
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  $endif$
+
+  <div class="container">
+    <div class="row">
+      $if(toc)$
+      <div id="$idprefix$TOC" class="col-md-3">
+        <div class="well toc">
+          <ul>
+            <li class="toc-title">
+              <strong>Table of Contents</strong>
+            </li>
+          </ul>
+          $toc$
+        </div>
+      </div>
+      $endif$
+
+      <div class="col-md-$if(toc)$9$else$12$endif$">
+      $for(include-before)$
+      $include-before$
+      $endfor$
+      $body$
+      $for(include-after)$
+      $include-after$
+      $endfor$
+      </div>
+    </div>
+  </div>
+</body>
+</html>
