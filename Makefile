@@ -5,11 +5,12 @@ NAME=installation_guide
 .PHONY: pdf html all
 
 help:
-	@echo "help  # Shows this help message"
-	@echo "all   # Builds everything"
-	@echo "pdf   # Builds the PDF version"
-	@echo "html  # Builds the HTML version"
-	@echo "clean # Removes generated files"
+	@echo "help   # Shows this help message"
+	@echo "all    # Builds everything"
+	@echo "pdf    # Builds the PDF version"
+	@echo "html   # Builds the HTML version"
+	@echo "clean  # Removes generated files"
+	@echo "upload # Uploads files to S3"
 
 all: html pdf
 
@@ -28,3 +29,6 @@ html:
 
 clean:
 	rm -f build/*
+
+upload: all
+	aws s3 sync build s3://opener/installation_guide/
