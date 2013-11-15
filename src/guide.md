@@ -256,10 +256,12 @@ To install Gems from Olery's private Gem server you first have to run the
 following command to tell RubyGems where to find the packages:
 
     # Make sure there's no whitespace in the password
-    gem sources --add "https://opener:Aek0YeeGup0ceephohcieW0eichiGha2Thoo"\
-    "0lohshunae9emaikeitainooleap@geminabox.olery.com"
-
+    gem sources --add GEMINABOX_URL
     gem sources --update
+
+Make sure you replace `GEMINABOX_URL` with the URL as specified in the
+knowledge base as found here:
+<https://github.com/opener-project/Knowledge-Base/blob/master/geminabox.md>.
 
 Once set up you can, for example, install the tokenizer:
 
