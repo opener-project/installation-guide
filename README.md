@@ -9,6 +9,7 @@ requirements for the various Opener components and how to install them.
 * Make
 * Pandoc
 * LaTeX (with xelatex support)
+* AWS command line tools (for uploading files to S3)
 
 ## Downloads
 
