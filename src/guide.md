@@ -1,4 +1,4 @@
-% Opener Installation Guide
+% OpeNER Installation Guide
 % Yorick Peterse <yorickpeterse@olery.com>
 % November 15th, 2013
 
@@ -6,7 +6,7 @@
 
 # Preface
 
-This guide covers the various steps needed to get the different Opener
+This guide covers the various steps needed to get the different OpeNER
 components up and running. It discusses the process of installing the various
 programming languages/environments needed, their required versions and so
 forth.
@@ -20,7 +20,7 @@ for corresponding download links.
 
 # Operating System Requirements
 
-The Opener components assume a Unix like operating system, or at least a system
+The OpeNER components assume a Unix like operating system, or at least a system
 that's compatible with the [POSIX][posix] standard. If you're using Windows you
 should look into either using a virtual machine or using [MinGW][mingw] or
 [Cygwin][cygwin].
@@ -29,7 +29,7 @@ Linux users are advised to run recent versions of the Linux kernel, though
 there's no hard requirement for this. OS X users are advised to run at least OS
 X Lion.
 
-The various Opener components have been tested on various versions of Ubuntu,
+The various OpeNER components have been tested on various versions of Ubuntu,
 OS X Mavericks/Mountain Lion, Arch Linux and Debian. They should work fine on
 at least these operating systems.
 
@@ -248,7 +248,7 @@ On my machine the output is as following:
 
 # RubyGems
 
-RubyGems is the package manager of Ruby and is used to distribute the Opener
+RubyGems is the package manager of Ruby and is used to distribute the OpeNER
 components. Currently these are hosted on <https://geminabox.olery.com/> but in
 the future they'll be moved to the public [RubyGems][rubygems] repository.
 
