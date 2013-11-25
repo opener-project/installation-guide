@@ -167,7 +167,7 @@ OS X already has Perl installed so no extra steps are needed.
 
 # Ruby
 
-All components are wrapped a Ruby package and distributed on
+All components are wrapped in a Ruby package and distributed on
 [RubyGems][rubygems]/Olery's private Geminabox server. The minimum required
 Ruby version is Ruby 1.9.3.
 
@@ -224,7 +224,7 @@ Create the directory for your Ruby versions:
 
 Now we can install Ruby 1.9.3:
 
-    ruby-install ruby 1.9.3 --install-dir=~/.rubies/ruby-1.9.3
+    ruby-install ruby 1.9.3 --install-dir ~/.rubies/ruby-1.9.3
 
 Reload your shell:
 
